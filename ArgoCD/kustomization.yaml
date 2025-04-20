@@ -8,4 +8,5 @@ resources:
   - ingress.yaml
   - sealed-secret.yaml
 patches:
-  - path: config.yaml
+  - path: cmd-params-cm.yaml
+  - path: cm.yaml
