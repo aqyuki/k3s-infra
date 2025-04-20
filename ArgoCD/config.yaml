@@ -7,6 +7,7 @@ metadata:
     app.kubernetes.io/part-of: argocd
 data:
   server.insecure: "true"
+  url: https://argocd.aqyuki.dev
   dex.config: |
     connectors:
       - type: github
