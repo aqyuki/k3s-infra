@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: argocd
+resources:
+  - github.com/argoproj/argo-cd//manifests/base?ref=v2.14.10
+  - namespace.yaml
+  - ingress.yaml
+patches:
+  - path: config.yaml
+  - path: secret.yaml # This file is not managed by Git and must be created before deploying
