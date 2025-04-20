@@ -8,4 +8,4 @@ resources:
   - ingress.yaml
 patches:
   - path: config.yaml
-  - path: secret.yaml # This file is not managed by Git and must be created before deploying
+  - path: sealed-secret.yaml
