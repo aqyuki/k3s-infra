@@ -10,3 +10,4 @@ resources:
 patches:
   - path: cmd-params-cm.yaml
   - path: cm.yaml
+  - path: rbac-cm.yaml
