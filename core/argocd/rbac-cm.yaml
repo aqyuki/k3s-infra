@@ -8,5 +8,5 @@ metadata:
 data:
   policy.default: role:readonly
   policy.csv: |
-    g: github:aqyuki, role:admin
+    g, github:aqyuki, role:admin
   scopes: "[groups,login]"
