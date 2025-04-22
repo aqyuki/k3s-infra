@@ -26,3 +26,8 @@ Secretに当たる情報は[sealed-secrets](https://github.com/bitnami-labs/seal
 # encrypt
 kubeseal --format=yaml --cert=cert.pem < secret.yaml > sealed-secret.yaml
 ```
+
+### Applicationの管理
+
+k3sにデプロイされるアプリケーションはArgoCDによってデプロイされます。デプロイする際には、app以下に適当なアプリケーションマニフェストを作成してください。
+GitHubにpushするとArgo CDが自動で検出してデプロイします。

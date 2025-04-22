@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: core
+  namespace: argocd
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: app/core
+    repoURL: https://github.com/aqyuki/k3s-infra.git
+    targetRevision: master
+  syncPolicy:
+    automated: {}
