@@ -13,5 +13,5 @@ data:
         id: github
         name: GitHub
         config:
-          clientID: $dex.github.clientID
-          clientSecret: $dex.github.clientSecret
+          clientID: "$argocd-auth-secret:dex.github.clientID"
+          clientSecret: "$argocd-auth-secret:dex.github.clientSecret"
